@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "version": "2026-09-30",
+  "snapshot_date": "2026-09-30",
+  "license": "CC-BY-4.0",
+  "description": "Corrected SEC submissions metadata with explicit timestamp provenance",
+  "population": {
+    "rows": 27272863,
+    "supported_rows": 25584390,
+    "unresolved_rows": 1688473
+  },
+  "source": {
+    "url": "https://www.sec.gov/Archives/edgar/daily-index/bulkdata/submissions.zip",
+    "retrieved_at": "2026-09-30T13:39:29.020333+00:00",
+    "last_modified": "Wed, 30 Sep 2026 12:34:49 GMT",
+    "etag": "\"51c9e9dcaa97cb7fd24acd92762e38d5-187\"",
+    "size_bytes": 1566325097,
+    "sha256": "1ac18f69e898dcb82de65683cdd4c3131f6a6c9b699a2f2da9f9edb9376471a1",
+    "members": 992294
+  },
+  "audit": {
+    "size_bytes": 1235685023,
+    "sha256": "f2e3c041cb8eb2cb4b251e11eae25f61b5e18fab0bef34544b912611c0fd219e",
+    "population_n": 27272863,
+    "sample_n": 10000,
+    "seed": 202609304,
+    "frozen_at": "2026-09-30T22:44:01.891395+00:00",
+    "policy": "Simple random sample of filing rows; predictions frozen before SGML lookup; no repairs",
+    "sampled_rows": 10000,
+    "verified_rows": 9230,
+    "errors": 0,
+    "unavailable_rows": 770,
+    "error_upper_95_among_verifiable": 0.0003245120445999541
+  },
+  "evidence_note": "Audit observations were collected after freezing this candidate and are supplied for future updates. Unavailable headers are not confirmations.",
+  "files": [
+    {
+      "name": "filings.parquet",
+      "role": "filings",
+      "optional": false,
+      "size_bytes": 1235685023,
+      "sha256": "f2e3c041cb8eb2cb4b251e11eae25f61b5e18fab0bef34544b912611c0fd219e"
+    },
+    {
+      "name": "sgml_observations.parquet",
+      "role": "sgml",
+      "optional": false,
+      "size_bytes": 5169572,
+      "sha256": "f5b802f5abbab7f7b063497bca4524f4bc3015112c3523f5cf5466b5da471943"
+    },
+    {
+      "name": "live_json_timestamp_observations.parquet",
+      "role": "live",
+      "optional": false,
+      "size_bytes": 333481604,
+      "sha256": "016ca224d086c1d3ccc6193ddb0b2212088b2cdcca1eb1297a0e72e7d7e16046"
+    },
+    {
+      "name": "audit_sample.csv",
+      "role": "audit_sample",
+      "optional": false,
+      "size_bytes": 1084308,
+      "sha256": "bc5310b544c746e40fde6303fabddb57bf198ef4207a5c4867e8fc10fb1a2c32"
+    },
+    {
+      "name": "audit_outcomes.parquet",
+      "role": "audit_outcomes",
+      "optional": false,
+      "size_bytes": 4242561,
+      "sha256": "ae4cea1902a599c13e17142a3b2464f5a6fab953576e0659d6d16e46ed178dd3"
+    },
+    {
+      "name": "audit_summary.parquet",
+      "role": "audit_summary",
+      "optional": false,
+      "size_bytes": 843,
+      "sha256": "06cf87a8b6f33ddfffb12ed7c81347dcfc3cee0b322bb3e9a99912f2b72ea7a0"
+    },
+    {
+      "name": "source_manifest.parquet",
+      "role": "source",
+      "optional": false,
+      "size_bytes": 1876,
+      "sha256": "ca2705ee2ab920d59123a1f4ef269eed3f739ba2774ea0c961150de0a64a35e7"
+    },
+    {
+      "name": "companies.parquet",
+      "role": "companion",
+      "optional": true,
+      "size_bytes": 37574601,
+      "sha256": "abb4a68da2cecb114cf008141d8a458ca41b40792680b0dc56707f3c3e93430e"
+    },
+    {
+      "name": "addresses.parquet",
+      "role": "companion",
+      "optional": true,
+      "size_bytes": 42462942,
+      "sha256": "c9004e3404c341af38f88d5b7cfc9b9e4b6babbf90b9b5d3b0443d769dea1765"
+    },
+    {
+      "name": "tickers.parquet",
+      "role": "companion",
+      "optional": true,
+      "size_bytes": 155547,
+      "sha256": "7c5681f8d9abcf20c7046d9fed0ddbca15269476170cc231587b1babebed9ced"
+    },
+    {
+      "name": "former_names.parquet",
+      "role": "companion",
+      "optional": true,
+      "size_bytes": 2185704,
+      "sha256": "477a2277eae9d69d0585e262d3c00182861e5492b00b3cef960336874c0b78b0"
+    },
+    {
+      "name": "files.parquet",
+      "role": "companion",
+      "optional": true,
+      "size_bytes": 136970,
+      "sha256": "9e8a38ba48a131831ddffe2f47fadebbdefaa0c9593284fba489e94a8538db1e"
+    }
+  ]
+}
